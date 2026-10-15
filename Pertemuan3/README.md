@@ -1,59 +1,185 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# LaraPress — Laravel Web Praktikum
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Muhamad Habibi Alfarisi**  
+**NPM:** 4524210137  
+**Praktikum:** Pertemuan 3  
+**Mata Kuliah:** Pemrograman Berbasis Web
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 1. Deskripsi Proyek
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+LaraPress merupakan proyek website sederhana yang dikembangkan menggunakan framework Laravel. Proyek ini dibuat sebagai latihan awal untuk memahami cara kerja routing, pengelolaan halaman menggunakan Blade, dan proses menampilkan respons web melalui browser.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Website memiliki navigasi yang menghubungkan beberapa halaman sehingga pengguna dapat berpindah dari satu bagian ke bagian lainnya dengan mudah.
 
-## Learning Laravel
+## 2. Halaman Website
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### Beranda
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Halaman utama menjadi titik awal ketika pengguna membuka website. Bagian ini menampilkan pengenalan LaraPress, deskripsi singkat, serta navigasi menuju halaman lainnya.
 
-## Laravel Sponsors
+### Tentang Kami
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Halaman ini menjelaskan latar belakang dan tujuan pengembangan LaraPress sebagai proyek pembelajaran pembuatan aplikasi web.
 
-### Premium Partners
+### Kontak
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Halaman kontak menyediakan informasi komunikasi contoh, seperti alamat email, nomor telepon, dan lokasi. Halaman ini juga menjadi penerapan tugas mandiri pada praktikum.
 
-## Contributing
+## 3. Teknologi Pengembangan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **Laravel 12** — framework utama aplikasi.
+- **PHP 8.2 atau lebih baru** — bahasa pemrograman sisi server.
+- **Blade** — sistem template untuk menyusun halaman.
+- **HTML dan CSS** — membangun struktur serta tampilan website.
+- **Composer** — mengelola dependensi PHP.
+- **XAMPP** — lingkungan pengembangan lokal.
+- **Visual Studio Code** — editor untuk menulis dan mengelola kode.
 
-## Code of Conduct
+## 4. Penerapan Konsep Laravel
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Routing
 
-## Security Vulnerabilities
+Routing digunakan untuk menghubungkan alamat URL dengan halaman yang sesuai. Rute web didefinisikan pada file `routes/web.php`.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Contoh rute yang digunakan:
 
-## License
+```php
+use Illuminate\Support\Facades\Route;
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/tentang-kami', function () {
+    return view('about');
+});
+
+Route::get('/kontak', function () {
+    return view('contact');
+});
+```
+
+Nama view di atas merupakan contoh. Pastikan nama file Blade sesuai dengan proyek yang sebenarnya.
+
+### Blade View
+
+File Blade digunakan untuk menampilkan konten halaman. Pada proyek ini, halaman diletakkan di direktori `resources/views/`.
+
+Contoh pemetaan halaman:
+
+| URL | View |
+|---|---|
+| `/` | `welcome.blade.php` |
+| `/tentang-kami` | `about.blade.php` |
+| `/kontak` | `contact.blade.php` |
+
+### Navigasi Ant halaman
+
+Setiap halaman menyediakan tautan navigasi agar pengguna dapat berpindah halaman tanpa harus mengetik URL secara manual.
+
+## 5. Struktur Direktori
+
+```text
+LaraPress/
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+├── resources/
+│   └── views/
+│       ├── welcome.blade.php
+│       ├── about.blade.php
+│       └── contact.blade.php
+├── routes/
+│   └── web.php
+├── storage/
+├── tests/
+├── .env.example
+├── artisan
+├── composer.json
+└── README.md
+```
+
+Struktur ini merupakan gambaran direktori utama Laravel. File tambahan dan nama view dapat berbeda mengikuti implementasi proyek.
+
+## 6. Menjalankan Proyek
+
+Pastikan PHP, Composer, dan dependensi Laravel sudah tersedia.
+
+Buka terminal pada direktori utama proyek, kemudian jalankan:
+
+```bash
+composer install
+```
+
+Jika file `.env` belum tersedia, salin `.env.example` menjadi `.env`, lalu buat application key:
+
+```bash
+php artisan key:generate
+```
+
+Setelah konfigurasi selesai, jalankan server pengembangan:
+
+```bash
+php artisan serve
+```
+
+Buka alamat berikut pada browser:
+
+```text
+http://127.0.0.1:8000
+```
+
+Halaman lainnya dapat diuji melalui:
+
+```text
+http://127.0.0.1:8000/tentang-kami
+http://127.0.0.1:8000/kontak
+```
+
+## 7. Dokumentasi Tampilan
+
+Berikut dokumentasi antarmuka LaraPress.
+
+### Beranda
+
+![Tampilan Beranda LaraPress](screenshots/larapress-beranda.png)
+
+### Tentang Kami
+
+![Tampilan Tentang Kami](screenshots/larapress-tentang.png)
+
+### Kontak
+
+![Tampilan Kontak LaraPress](screenshots/larapress-kontak.png)
+
+Simpan screenshot ke folder `screenshots` pada direktori yang sama dengan README. Sesuaikan nama file pada Markdown apabila nama gambar yang digunakan berbeda.
+
+## 8. Pengujian Aplikasi
+
+Pengujian dilakukan untuk memeriksa fungsi dasar website.
+
+| Skenario | Hasil yang diharapkan |
+|---|---|
+| Membuka `/` | Halaman Beranda tampil |
+| Membuka `/tentang-kami` | Halaman Tentang Kami tampil |
+| Membuka `/kontak` | Halaman Kontak tampil |
+| Mengeklik menu navigasi | Pengguna diarahkan ke halaman tujuan |
+| Menggunakan tautan kembali | Pengguna dapat kembali ke Beranda |
+
+## 9. Hasil Pembelajaran
+
+Melalui praktikum ini, konsep dasar Laravel mulai diterapkan dalam bentuk website dengan beberapa halaman yang saling terhubung. Praktikum membantu memahami hubungan antara request dari browser, pencocokan rute, pemanggilan view, dan respons yang dikirimkan kembali kepada pengguna.
+
+## 10. Penutup
+
+LaraPress menjadi latihan awal untuk membangun website menggunakan Laravel. Dengan membuat halaman Beranda, Tentang Kami, dan Kontak, konsep routing dan Blade dapat dipraktikkan secara langsung. Struktur ini juga dapat dikembangkan lebih lanjut menjadi aplikasi blog sederhana dengan fitur tambahan.
+
+---
+
+**Disusun oleh:** Muhamad Habibi Alfarisi  
+**NPM:** 4524210137  
+**Program Studi:** Teknik Informatika
