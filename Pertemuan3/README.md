@@ -156,7 +156,7 @@ Berikut dokumentasi antarmuka LaraPress.
 
 ![Tampilan Kontak LaraPress](larapress-kontak.png)
 
-Simpan screenshot ke folder `screenshots` pada direktori yang sama dengan README. Sesuaikan nama file pada Markdown apabila nama gambar yang digunakan berbeda.
+
 
 ## 8. Pengujian Aplikasi
 
