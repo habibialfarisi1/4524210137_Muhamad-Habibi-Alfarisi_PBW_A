@@ -146,17 +146,17 @@ Berikut dokumentasi antarmuka LaraPress.
 
 ### Beranda
 
-![Tampilan Beranda LaraPress](larapress-beranda.png)
+![Tampilan Beranda LaraPress](screenshots/larapress-beranda.png)
 
 ### Tentang Kami
 
-![Tampilan Tentang Kami](larapress-tentang.png)
+![Tampilan Tentang Kami](screenshots/larapress-tentang.png)
 
 ### Kontak
 
-![Tampilan Kontak LaraPress](larapress-kontak.png)
+![Tampilan Kontak LaraPress](screenshots/larapress-kontak.png)
 
-
+Simpan screenshot ke folder `screenshots` pada direktori yang sama dengan README. Sesuaikan nama file pada Markdown apabila nama gambar yang digunakan berbeda.
 
 ## 8. Pengujian Aplikasi
 
