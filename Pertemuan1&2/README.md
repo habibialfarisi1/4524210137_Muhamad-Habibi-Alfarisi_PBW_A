@@ -94,11 +94,11 @@ Tambahkan screenshot dari aplikasi yang benar-benar dijalankan pada komputer.
 
 **Profil Mahasiswa**
 
-![Student Profile](biodata-modern.png)
+![Student Profile](biodata-terbaru.png)
 
 **Kalkulator**
 
-![Simple Math Tool](kalkulator-modern.png)
+![Simple Math Tool](kalkulator-terbaru.png)
 
 Nama dan lokasi gambar di atas merupakan contoh. Sesuaikan tautan dengan file screenshot yang tersedia.
 
