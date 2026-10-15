@@ -1,59 +1,112 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Praktikum PBW — Pertemuan 4
+## Implementasi Autentikasi Pengguna pada Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Nama:** Muhamad Habibi Alfarisi  
+**NPM:** 4524210137  
+**Mata Kuliah:** Pemrograman Berbasis Web
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Ringkasan Praktikum
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Pada praktikum pertemuan keempat ini, dilakukan penerapan fitur autentikasi pengguna menggunakan Laravel. Fitur yang dikembangkan mencakup halaman pendaftaran akun dan halaman masuk untuk pengguna yang telah terdaftar.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Antarmuka menggunakan desain minimalis dengan formulir yang mudah dipahami, sehingga pengguna dapat mengisi data akun secara terstruktur.
 
-## Learning Laravel
+## Fitur yang Dikembangkan
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 1. Registrasi Pengguna
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Halaman registrasi digunakan untuk membuat akun baru. Pengguna diminta mengisi beberapa informasi, yaitu:
 
-## Laravel Sponsors
+- Nama pengguna.
+- Alamat email.
+- Kata sandi.
+- Konfirmasi kata sandi.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Formulir menyediakan tombol **Register** untuk mengirimkan data pendaftaran serta tautan menuju halaman login bagi pengguna yang telah memiliki akun.
 
-### Premium Partners
+### 2. Login Pengguna
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Halaman login berfungsi sebagai pintu masuk ke aplikasi bagi pengguna terdaftar. Formulir terdiri atas:
 
-## Contributing
+- Input email.
+- Input password.
+- Opsi *Remember me*.
+- Tautan pemulihan password.
+- Tombol **Log In**.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Fitur tersebut memberikan pengalaman masuk yang sederhana dan menyediakan akses ke proses pemulihan akun apabila diperlukan.
 
-## Code of Conduct
+## Teknologi yang Digunakan
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+| Teknologi | Kegunaan |
+|---|---|
+| Laravel | Framework aplikasi web |
+| PHP | Memproses permintaan dan logika aplikasi |
+| Blade | Menyusun tampilan halaman |
+| HTML | Membentuk struktur formulir |
+| CSS / Tailwind CSS | Mengatur tata letak dan desain antarmuka |
+| SQLite / MySQL | Menyimpan data pengguna sesuai konfigurasi proyek |
+| Composer | Mengelola dependensi Laravel |
 
-## Security Vulnerabilities
+## Dokumentasi Tampilan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Halaman Pendaftaran
 
-## License
+Halaman ini menampilkan formulir pembuatan akun dengan empat kolom input dan tombol registrasi.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![Halaman Registrasi(2)](screenshots/registrasi.png)
+
+### Halaman Login
+
+Halaman masuk menyediakan kolom email dan password, opsi untuk mengingat sesi, serta tautan pemulihan kata sandi.
+
+![Halaman Login](screenshots/login.png)
+
+## Konsep yang Dipelajari
+
+Melalui implementasi ini, beberapa konsep pengembangan web dipraktikkan, antara lain:
+
+1. Penggunaan formulir untuk menerima data dari pengguna.
+2. Penerapan autentikasi melalui proses registrasi dan login.
+3. Validasi data yang dikirimkan melalui formulir.
+4. Pengelolaan sesi pengguna setelah proses login.
+5. Penerapan komponen antarmuka yang konsisten pada halaman autentikasi.
+
+## Cara Menjalankan Aplikasi
+
+1. Pastikan PHP, Composer, dan dependensi proyek telah tersedia.
+2. Buka terminal pada direktori utama proyek Laravel.
+3. Jalankan perintah berikut untuk memasang dependensi jika diperlukan:
+
+   ```bash
+   composer install
+   ```
+
+4. Pastikan file `.env` tersedia dan konfigurasi database sudah sesuai.
+5. Jika aplikasi menggunakan database yang belum memiliki tabel, jalankan migrasi setelah konfigurasi database siap:
+
+   ```bash
+   php artisan migrate
+   ```
+
+6. Jalankan server pengembangan:
+
+   ```bash
+   php artisan serve
+   ```
+
+7. Buka alamat `http://127.0.0.1:8000` pada browser dan akses halaman autentikasi sesuai rute yang tersedia.
+
+## Kesimpulan
+
+Praktikum pertemuan keempat memberikan pemahaman mengenai penerapan halaman autentikasi pada aplikasi berbasis Laravel. Halaman registrasi dan login menjadi bagian penting dalam membangun aplikasi yang dapat membedakan pengguna serta mengelola akses akun.
+
+Pengembangan selanjutnya dapat mencakup validasi yang lebih lengkap, pemberitahuan kesalahan input, fitur reset password, dan pembatasan akses halaman berdasarkan status autentikasi.
+
+---
+
+**Disusun oleh:** Muhamad Habibi Alfarisi  
+**NPM:** 4524210137  
+**Program Studi:** Teknik Informatika
