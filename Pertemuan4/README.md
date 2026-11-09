@@ -509,7 +509,7 @@ Pengujian dilakukan untuk memastikan fitur autentikasi yang disediakan Laravel B
 
 Pengujian tersebut merupakan skenario pengujian berdasarkan fitur yang dipelajari dalam praktikum. Hasil aktual setiap skenario perlu disesuaikan dengan pengujian langsung pada aplikasi.
 
-## 📖 11. Perbedaan Praktikum Pertemuan 3 dan 4
+##  11. Perbedaan Praktikum Pertemuan 3 dan 4
 
 Praktikum pertemuan keempat merupakan pengembangan dari proyek LaraPress yang dibuat pada pertemuan sebelumnya.
 
