@@ -182,7 +182,7 @@ Halaman Profil Mahasiswa menggunakan desain dengan kombinasi warna hijau tua, pu
 
 Susunan informasi dibuat dalam bentuk kartu agar data mudah dibaca. Penggunaan progress bar juga membantu memberikan gambaran visual mengenai nilai IPK dibandingkan skala maksimum 4,00.
 
-## 🧩 Penjelasan Bagian Penting Program
+##  Penjelasan Bagian Penting Program
 
 Berikut lima bagian konsep program yang penting dalam pembuatan aplikasi ini.
 
@@ -231,7 +231,7 @@ PHP merupakan bahasa pemrograman server-side. Artinya, kode PHP diproses pada se
 
 CSS digunakan untuk mengatur tampilan halaman, termasuk warna latar belakang, tipografi, ukuran elemen, jarak antarkomponen, tombol, kartu informasi, dan progress bar. Pada kalkulator, CSS membantu membuat tombol operasi dan tombol hitung lebih jelas. Pada profil mahasiswa, CSS membantu membentuk panel identitas dan ringkasan akademik agar terlihat rapi.
 
-## 🧪 Pengujian
+## Pengujian
 
 Pengujian dilakukan untuk memastikan tampilan dan fungsi utama aplikasi berjalan sesuai tujuan.
 
@@ -258,7 +258,7 @@ Pengujian dilakukan untuk memastikan tampilan dan fungsi utama aplikasi berjalan
 
 > Tabel di atas merupakan skenario pengujian dan hasil yang diharapkan berdasarkan fungsi yang didokumentasikan. Isi dengan hasil aktual setelah setiap skenario benar-benar dijalankan.
 
-## 📝 Catatan Pengembangan
+## Catatan Pengembangan
 
 README ini disusun berdasarkan materi praktikum, contoh README, dan dua screenshot aplikasi yang diberikan. Agar dokumentasi di GitHub dapat menampilkan gambar dengan benar, simpan kedua screenshot ke dalam folder berikut:
 
