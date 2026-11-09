@@ -18,7 +18,7 @@ Praktikum ini berisi pembuatan dua halaman web menggunakan PHP. Halaman pertama 
 
 Pembuatan kedua halaman ini menjadi latihan untuk memahami dasar pemrograman web, penggunaan PHP sebagai bahasa pemrograman server-side, pengolahan input, serta penyajian hasil melalui halaman web.
 
-## 📋 Daftar Isi
+## Daftar Isi
 
 - [Gambaran Umum](#-gambaran-umum)
 - [Fitur Aplikasi](#-fitur-aplikasi)
@@ -30,7 +30,7 @@ Pembuatan kedua halaman ini menjadi latihan untuk memahami dasar pemrograman web
 - [Pengujian](#-pengujian)
 - [Catatan Pengembangan](#-catatan-pengembangan)
 
-## 🎯 Gambaran Umum
+## Gambaran Umum
 
 ### 1. Kalkulator Sederhana
 
