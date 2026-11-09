@@ -408,7 +408,7 @@ Alur tersebut dikenal sebagai:
 
 **Request → Route → View → Response**
 
-## 📸 10. Dokumentasi Tampilan Website
+##  10. Dokumentasi Tampilan Website
 
 Berikut dokumentasi hasil implementasi website LaraPress berdasarkan tiga halaman yang telah dibuat.
 
